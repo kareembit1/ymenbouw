@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YMENBOUW | Stucwerk & Afbouw in Amsterdam</title>
+<meta name="description" content="YMENBOUW verzorgt professioneel stucwerk, glad stucwerk, sausklaar stucwerk, pleisterwerk en renovatiestucwerk in Amsterdam.">
+<style>
+:root{
+  --bg:#f5f4f1; --dark:#151515; --muted:#6f6f6a; --accent:#0754a6;
+  --white:#fff; --line:#dedcd6; --max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;background:var(--bg);color:var(--dark);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+.nav{position:absolute;top:0;left:0;right:0;z-index:10;color:#fff;padding:24px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:25px;font-weight:900;letter-spacing:.08em}
+.logo span{color:#75a8dc}
+.nav-links{display:flex;gap:30px;font-size:14px;font-weight:600}
+.nav-links a:hover{color:#75a8dc}
+.nav-cta{border:1px solid rgba(255,255,255,.55);padding:10px 18px;border-radius:30px}
+.hero{min-height:760px;display:flex;align-items:center;color:#fff;position:relative;overflow:hidden;
+background:linear-gradient(90deg,rgba(8,8,8,.82),rgba(8,8,8,.38)),url('https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=2200&q=85') center/cover}
+.hero-content{max-width:760px;padding-top:55px}
+.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.22em;color:#75a8dc;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(48px,7vw,88px);line-height:.98;letter-spacing:-.045em;margin-bottom:25px}
+.hero p{font-size:19px;max-width:620px;color:#e8e8e8;margin-bottom:32px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{padding:14px 23px;border-radius:4px;font-weight:800;font-size:14px;display:inline-block}
+.btn-primary{background:#fff;color:#111}
+.btn-primary:hover{background:#e8e8e8}
+.btn-outline{border:1px solid rgba(255,255,255,.6);color:#fff}
+.btn-outline:hover{background:#fff;color:#111}
+.section{padding:105px 0}
+.section-head{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-bottom:45px}
+.kicker{color:var(--accent);text-transform:uppercase;letter-spacing:.18em;font-size:12px;font-weight:900}
+h2{font-size:clamp(36px,5vw,58px);line-height:1.03;letter-spacing:-.04em;margin-top:10px}
+.intro{max-width:460px;color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:#fff;padding:32px;min-height:230px;border:1px solid var(--line);transition:.25s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 45px rgba(0,0,0,.08)}
+.number{font-size:12px;color:var(--accent);font-weight:900}
+.card h3{font-size:23px;margin:35px 0 10px}
+.card p{color:var(--muted);font-size:15px}
+.about{background:#181818;color:#fff}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:80px;align-items:center}
+.about p{color:#bdbdb9;margin-top:24px;max-width:620px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:#444;margin-top:40px}
+.stat{background:#181818;padding:24px}
+.stat strong{display:block;font-size:30px}
+.stat span{font-size:12px;color:#aaa;text-transform:uppercase;letter-spacing:.1em}
+.review-wrap{display:grid;grid-template-columns:1fr 1.6fr;gap:50px;align-items:start}
+.rating{font-size:70px;font-weight:900;line-height:1}
+.stars{color:#b88952;font-size:22px;letter-spacing:4px;margin:12px 0}
+.review{background:#fff;border:1px solid var(--line);padding:32px;margin-bottom:14px}
+.review p{font-size:17px;font-weight:600}
+.review small{display:block;color:var(--muted);margin-top:18px}
+.contact{background:#dedbd3}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.contact-list{margin-top:30px}
+.contact-item{padding:17px 0;border-bottom:1px solid #c4c0b8}
+.contact-item span{display:block;color:#777;font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+.contact-item strong{font-size:18px}
+form{background:#fff;padding:35px}
+input,textarea{width:100%;border:1px solid #d5d3cd;padding:14px;margin-bottom:14px;font:inherit;background:#fafaf8}
+textarea{min-height:130px;resize:vertical}
+footer{background:#111;color:#aaa;padding:30px 0}
+.footer-inner{display:flex;justify-content:space-between;gap:20px;font-size:13px}
+@media(max-width:800px){
+ .nav-links{display:none}.hero{min-height:680px}
+ .section{padding:75px 0}.section-head,.review-wrap,.contact-grid,.about-grid{grid-template-columns:1fr;display:grid;gap:30px}
+ .services{grid-template-columns:1fr}.card{min-height:auto}
+ .footer-inner{flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="#"><img src="ymen-logo.png" alt="YMEN Stukadoorsbedrijf" style="width:145px;height:auto;display:block;filter:brightness(0) invert(1);"></a>
+    <nav class="nav-links">
+      <a href="#diensten">Diensten</a>
+      <a href="#over-ons">Over ons</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact" class="nav-cta">Offerte aanvragen</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-content">
+    <div class="eyebrow">Stucwerk & afbouw · Amsterdam</div>
+    <h1>Strak werk.<br>Tot in detail.</h1>
+    <p>Professioneel stucwerk voor muren en plafonds. Van glad en sausklaar stucwerk tot renovatie — netjes uitgevoerd met oog voor kwaliteit.</p>
+    <div class="buttons">
+      <a class="btn btn-primary" href="tel:+31621377407">Bel direct · 06 21377407</a>
+      <a class="btn btn-outline" href="#contact">Vrijblijvend contact</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="diensten">
+ <div class="container">
+  <div class="section-head">
+   <div><div class="kicker">Onze expertise</div><h2>Afwerking die<br>je blijft zien.</h2></div>
+   <p class="intro">Van een enkele wand tot complete renovaties: YMENBOUW levert strak, zorgvuldig en professioneel stucwerk in Amsterdam en omgeving.</p>
+  </div>
+  <div class="services">
+   <article class="card"><div class="number">01</div><h3>Glad stucwerk</h3><p>Een egale, strakke basis voor een moderne en hoogwaardige uitstraling.</p></article>
+   <article class="card"><div class="number">02</div><h3>Sausklaar stucwerk</h3><p>Perfect voorbereid voor schilderwerk, met aandacht voor iedere overgang en hoek.</p></article>
+   <article class="card"><div class="number">03</div><h3>Pleisterwerk</h3><p>Vakkundig pleisterwerk voor muren en plafonds, afgestemd op de ruimte.</p></article>
+   <article class="card"><div class="number">04</div><h3>Stucwerk muren</h3><p>Van kleine herstelwerkzaamheden tot complete wanden: strak en netjes afgewerkt.</p></article>
+   <article class="card"><div class="number">05</div><h3>Stucwerk plafonds</h3><p>Een naadloze uitstraling waarbij het eindresultaat centraal staat.</p></article>
+   <article class="card"><div class="number">06</div><h3>Renovatiestucwerk</h3><p>Een bestaande ruimte weer als nieuw maken? Wij zorgen voor een professionele afwerking.</p></article>
+  </div>
+ </div>
+</section>
+
+<section class="section about" id="over-ons">
+ <div class="container about-grid">
+  <div>
+   <div class="kicker">YMENBOUW</div>
+   <h2>Vakmanschap is zichtbaar in het eindresultaat.</h2>
+   <p>YMENBOUW richt zich op hoogwaardig stucwerk en een nette uitvoering. Duidelijke afspraken, zorgvuldig werken en een afwerking waar je trots op kunt zijn.</p>
+   <div class="stats">
+    <div class="stat"><strong>5/5</strong><span>Google beoordeling</span></div>
+    <div class="stat"><strong>Amsterdam</strong><span>Werkgebied</span></div>
+   </div>
+  </div>
+  <div>
+   <p>“Zeer hoogwaardig afgewerkt, lieten dagelijks alles netjes achter, komen afspraken na en leveren het fantastisch op!”</p>
+   <p>— Robin Zuijdam, Google review</p>
+  </div>
+ </div>
+</section>
+
+<section class="section" id="reviews">
+ <div class="container">
+  <div class="section-head">
+   <div><div class="kicker">Ervaringen</div><h2>Klanten aan<br>het woord.</h2></div>
+   <p class="intro">YMENBOUW heeft momenteel een 5/5 beoordeling op basis van de beschikbare Google reviews.</p>
+  </div>
+  <div class="review-wrap">
+   <div><div class="rating">5.0</div><div class="stars">★★★★★</div><p>Google beoordeling</p></div>
+   <div>
+    <article class="review"><p>“Wij hebben deze broers bij ons aan het werk gehad, vanuit aangenomen werk. Wisten niet wat we konden verwachten. En wat hebben ze een prachtig werk afgeleverd, werken netjes en …”</p><small>Rianne van der Meer - de Wit · 2 maanden geleden</small></article>
+    <article class="review"><p>“Echt een aanrader deze 2 broers! Zeer hoogwaardig afgewerkt, lieten dagelijks alles netjes achter, komen afspraken na en leveren het fantastisch op!”</p><small>Robin Zuijdam · 5 maanden geleden</small></article>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="section contact" id="contact">
+ <div class="container contact-grid">
+  <div>
+   <div class="kicker">Contact</div>
+   <h2>Klaar voor een<br>strakke afwerking?</h2>
+   <p class="intro" style="margin-top:20px">Neem contact op voor een vrijblijvende kennismaking of offerte.</p>
+   <div class="contact-list">
+    <div class="contact-item"><span>Telefoon</span><strong><a href="tel:+31621377407">06 21377407</a></strong></div>
+    <div class="contact-item"><span>Werkgebied</span><strong>1034 ND Amsterdam</strong></div>
+    <div class="contact-item"><span>Specialisatie</span><strong>Stucwerk & afbouw</strong></div>
+   </div>
+  </div>
+  <form onsubmit="event.preventDefault(); alert('Bedankt! Neem telefonisch contact op via 06 21377407 om je aanvraag te bevestigen.');">
+   <h3 style="font-size:26px;margin-bottom:20px">Vraag een offerte aan</h3>
+   <input type="text" placeholder="Naam" required>
+   <input type="tel" placeholder="Telefoonnummer" required>
+   <input type="email" placeholder="E-mailadres">
+   <textarea placeholder="Vertel kort wat je wilt laten stucen..."></textarea>
+   <button class="btn" style="border:0;background:#151515;color:#fff;cursor:pointer;width:100%">Aanvraag versturen</button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="container footer-inner">
+  <div>© 2026 YMENBOUW · Stucwerk & Afbouw</div>
+  <div>Amsterdam · 06 21377407</div>
+ </div>
+</footer>
+</body>
+</html>
