@@ -115,6 +115,22 @@ footer{background:#050f20;color:#aebbd0;padding:28px 0;font-size:13px}.footer-in
  .section-head{display:block}.section-head p{margin-top:16px}
  h1{font-size:48px}
 }
+
+.photo-gallery{grid-template-columns:repeat(3,1fr);grid-template-rows:270px 270px}
+.photo-project{min-height:0}
+.photo-project.large{grid-row:span 1}
+.photo-project img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .45s ease}
+.photo-project:hover img{transform:scale(1.035)}
+.photo-project .project-overlay{z-index:2}
+.gallery-note{margin:18px 0 0;color:#98a2b3;font-size:12px}
+@media(max-width:900px){
+  .photo-gallery{grid-template-columns:1fr 1fr;grid-template-rows:260px 260px 260px}
+}
+@media(max-width:680px){
+  .photo-gallery{display:block}
+  .photo-project,.photo-project.large{height:300px;margin-bottom:16px}
+}
+
 </style>
 </head>
 <body>
@@ -179,11 +195,35 @@ footer{background:#050f20;color:#aebbd0;padding:28px 0;font-size:13px}.footer-in
       <div><div class="kicker">Voorbeelden</div><h2>Van ondergrond<br>naar strak resultaat.</h2></div>
       <p>Een indruk van de soorten afwerking die we voor woningen en renovaties verzorgen.</p>
     </div>
-    <div class="project-grid">
-      <article class="project large"><div class="project-overlay"><small>Woonkamer</small><h3>Glad wandstucwerk</h3></div></article>
-      <article class="project"><div class="project-overlay"><small>Renovatie</small><h3>Strakke wandafwerking</h3></div></article>
-      <article class="project"><div class="project-overlay"><small>Plafond</small><h3>Egale, rustige finish</h3></div></article>
+    
+    <div class="project-grid photo-gallery">
+      <article class="project photo-project large">
+        <img src="images/woonkamer.jpg" alt="Voorbeeld van strak gestucte woonkamerwanden">
+        <div class="project-overlay"><small>Voorbeeldbeeld</small><h3>Woonkamer – strak gestucte wanden</h3></div>
+      </article>
+      <article class="project photo-project">
+        <img src="images/glad-stucwerk.jpg" alt="Voorbeeld van glad stucwerk in een woonkamer">
+        <div class="project-overlay"><small>Voorbeeldbeeld</small><h3>Woonkamer – glad stucwerk</h3></div>
+      </article>
+      <article class="project photo-project">
+        <img src="images/strakke-hoeken.jpg" alt="Voorbeeld van strak afgewerkte stucwerkhoeken">
+        <div class="project-overlay"><small>Voorbeeldbeeld</small><h3>Strakke hoeken en afwerking</h3></div>
+      </article>
+      <article class="project photo-project">
+        <img src="images/zolder.jpg" alt="Voorbeeld van glad gestucte zolderwanden en plafond">
+        <div class="project-overlay"><small>Voorbeeldbeeld</small><h3>Zolder – glad plafond en wanden</h3></div>
+      </article>
+      <article class="project photo-project">
+        <img src="images/wand-met-nis.jpg" alt="Voorbeeld van decoratief stucwerk met nis">
+        <div class="project-overlay"><small>Voorbeeldbeeld</small><h3>Wand met nis – decoratief stucwerk</h3></div>
+      </article>
+      <article class="project photo-project">
+        <img src="images/trapgat.jpg" alt="Voorbeeld van strak afgewerkt trapgat">
+        <div class="project-overlay"><small>Voorbeeldbeeld</small><h3>Trapgat – strak en naadloos</h3></div>
+      </article>
     </div>
+    <p class="gallery-note">* De afbeeldingen hierboven zijn voorbeeldbeelden ter illustratie van mogelijke afwerkingen.</p>
+
   </div>
 </section>
 
