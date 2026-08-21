@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="YMENBOUW – professioneel stucwerk in Amsterdam en omgeving. Strakke afwerking, nette werkwijze en duidelijke afspraken.">
+<meta name="description" content="YMENBOUW is stukadoor in Amsterdam en omgeving. Professioneel stucwerk voor wanden, plafonds en renovatie. Strakke afwerking, netjes werken en duidelijke afspraken.">
+<meta name="keywords" content="stukadoor Amsterdam, stucadoor Amsterdam, stucwerk Amsterdam, wanden stucen, plafond stucen, renovatie stucwerk">
 <title>YMENBOUW | Stukadoor Amsterdam</title>
 <style>
 :root{
@@ -131,6 +132,36 @@ footer{background:#050f20;color:#aebbd0;padding:28px 0;font-size:13px}.footer-in
   .photo-project,.photo-project.large{height:300px;margin-bottom:16px}
 }
 
+
+/* YMENBOUW V2 upgrades */
+.hero-photo-card{padding:14px}
+.hero-photo-card .work-visual{background:#dbe4ef;}
+.work-visual img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.visual-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,19,40,.02) 30%,rgba(3,19,40,.55) 100%)}
+.service-note{margin-top:28px;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.service-note span{background:#fff;border:1px solid var(--line);border-radius:14px;padding:15px 17px;color:#667085;font-size:13px}
+.service-note b{color:var(--ink)}
+.why{background:#fff}
+.why-grid{display:grid;grid-template-columns:1.1fr .7fr;gap:70px;align-items:center}
+.why-intro{color:var(--muted);font-size:17px;max-width:650px;margin:18px 0 30px}
+.why-list{display:grid;gap:18px}
+.why-list>div{display:grid;grid-template-columns:42px 1fr;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.why-list>div:last-child{border-bottom:0}
+.why-list span{color:var(--blue);font-weight:850;font-size:13px;padding-top:2px}
+.why-list b{font-size:17px}.why-list p{margin:4px 0 0;color:var(--muted);font-size:14px}
+.why-card{background:linear-gradient(145deg,#071a38,#0c3674);color:#fff;border-radius:28px;padding:36px;box-shadow:0 24px 60px rgba(7,26,56,.18)}
+.why-card-number{font-size:72px;line-height:1;font-weight:900;letter-spacing:-.06em}
+.why-card .stars{color:#fff}.why-card p{color:#c6d3e7}.why-card .btn-primary{background:#fff;color:#071a38;box-shadow:none}
+.photo-project{cursor:pointer}
+.lightbox{position:fixed;inset:0;background:rgba(3,12,25,.88);display:none;align-items:center;justify-content:center;padding:30px;z-index:100}
+.lightbox.open{display:flex}
+.lightbox img{max-width:min(1100px,94vw);max-height:86vh;border-radius:16px;box-shadow:0 30px 80px rgba(0,0,0,.35)}
+.lightbox-close{position:absolute;top:18px;right:22px;border:0;background:rgba(255,255,255,.12);color:#fff;font-size:38px;line-height:1;width:52px;height:52px;border-radius:50%;cursor:pointer}
+.whatsapp-float{position:fixed;right:22px;bottom:22px;z-index:50;background:#1fbe67;color:#fff;border-radius:999px;padding:13px 18px;font-weight:800;box-shadow:0 12px 30px rgba(0,0,0,.18)}
+.mobile-cta{display:none}
+@media(max-width:900px){.service-note{grid-template-columns:1fr}.why-grid{grid-template-columns:1fr;gap:35px}}
+@media(max-width:680px){.whatsapp-float{display:none}.mobile-cta{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:60;box-shadow:0 -8px 24px rgba(0,0,0,.12)}.mobile-cta a{padding:14px;text-align:center;font-weight:800;background:#fff;color:var(--ink);border-right:1px solid var(--line)}.mobile-cta a:last-child{background:#1fbe67;color:#fff;border-right:0}body{padding-bottom:54px}.hero-photo-card .work-visual{height:330px}.why-card{padding:28px}}
+
 </style>
 </head>
 <body>
@@ -167,9 +198,11 @@ footer{background:#050f20;color:#aebbd0;padding:28px 0;font-size:13px}.footer-in
         <span>✓ Amsterdam & omgeving</span>
       </div>
     </div>
-    <div class="hero-card">
+    <div class="hero-card hero-photo-card">
       <div class="work-visual">
-        <div class="visual-label"><b>Vakwerk tot in de details</b><span>Gladde wanden · plafonds · renovatie</span></div>
+        <img src="images/woonkamer.jpg" alt="Voorbeeld van strak stucwerk in een woonkamer">
+        <div class="visual-shade"></div>
+        <div class="visual-label"><b>Strakke afwerking</b><span>Voorbeeld van mogelijk resultaat · YMENBOUW</span></div>
       </div>
     </div>
   </div>
@@ -185,6 +218,11 @@ footer{background:#050f20;color:#aebbd0;padding:28px 0;font-size:13px}.footer-in
       <article class="card"><div class="icon">01</div><h3>Wanden stucen</h3><p>Glad en strak afgewerkte binnenwanden, afgestemd op de gewenste uitstraling.</p></article>
       <article class="card"><div class="icon">02</div><h3>Plafonds</h3><p>Een rustige, egale afwerking die licht mooi laat vallen en een ruimte direct verzorgder maakt.</p></article>
       <article class="card"><div class="icon">03</div><h3>Renovatie & herstel</h3><p>Voorbereiden, herstellen en opnieuw afwerken van bestaande ondergronden bij verbouwingen.</p></article>
+    </div>
+    <div class="service-note">
+      <span><b>✓ Netjes werken</b> — bescherming en een verzorgde oplevering</span>
+      <span><b>✓ Duidelijke afspraken</b> — vooraf helder over werkzaamheden</span>
+      <span><b>✓ Amsterdam & omgeving</b> — voor woningen en verbouwingen</span>
     </div>
   </div>
 </section>
@@ -222,7 +260,8 @@ footer{background:#050f20;color:#aebbd0;padding:28px 0;font-size:13px}.footer-in
         <div class="project-overlay"><small>Voorbeeldbeeld</small><h3>Trapgat – strak en naadloos</h3></div>
       </article>
     </div>
-    <p class="gallery-note">* De afbeeldingen hierboven zijn voorbeeldbeelden ter illustratie van mogelijke afwerkingen.</p>
+    <p class="gallery-note">* De afbeeldingen hierboven zijn voorbeeldbeelden ter illustratie van mogelijke afwerkingen. Klik op een foto om deze groter te bekijken.</p>
+    <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" type="button" aria-label="Sluiten">×</button><img id="lightboxImg" src="" alt=""></div>
 
   </div>
 </section>
@@ -238,6 +277,28 @@ footer{background:#050f20;color:#aebbd0;padding:28px 0;font-size:13px}.footer-in
       <div class="step"><div class="num">02 / ADVIES</div><h3>Opname & offerte</h3><p>We beoordelen de situatie en maken duidelijke afspraken over het werk.</p></div>
       <div class="step"><div class="num">03 / UITVOERING</div><h3>Vakkundig stucen</h3><p>We bereiden de ondergrond goed voor en werken zorgvuldig af.</p></div>
       <div class="step"><div class="num">04 / OPLEVERING</div><h3>Netjes klaar</h3><p>De ruimte wordt verzorgd achtergelaten en het resultaat gecontroleerd.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container why-grid">
+    <div>
+      <div class="kicker">Waarom YMENBOUW</div>
+      <h2>Een strak resultaat begint met goed werk.</h2>
+      <p class="why-intro">Niet alleen het eindresultaat telt. Een goede voorbereiding, nette uitvoering en duidelijke communicatie maken het verschil.</p>
+      <div class="why-list">
+        <div><span>01</span><div><b>Goede voorbereiding</b><p>De ondergrond wordt zorgvuldig beoordeeld en voorbereid voordat we starten.</p></div></div>
+        <div><span>02</span><div><b>Strakke afwerking</b><p>We werken nauwkeurig voor egale wanden, plafonds en nette hoeken.</p></div></div>
+        <div><span>03</span><div><b>Verzorgde oplevering</b><p>We laten de ruimte zo netjes mogelijk achter en controleren het werk samen.</p></div></div>
+      </div>
+    </div>
+    <div class="why-card">
+      <div class="why-card-number">5,0</div>
+      <div class="stars">★★★★★</div>
+      <b>Gemiddeld beoordeeld op Google</b>
+      <p>2 aangeleverde beoordelingen van klanten die het werk en de nette werkwijze waarderen.</p>
+      <a class="btn btn-primary" target="_blank" rel="noopener" href="https://www.google.com/search?q=YMENBOUW+Reviews">Bekijk reviews →</a>
     </div>
   </div>
 </section>
@@ -285,6 +346,9 @@ footer{background:#050f20;color:#aebbd0;padding:28px 0;font-size:13px}.footer-in
 </section>
 </main>
 
+<a class="whatsapp-float" href="https://wa.me/31621377407?text=Hoi%20YMENBOUW%2C%20ik%20wil%20graag%20een%20offerte%20aanvragen." target="_blank" rel="noopener" aria-label="WhatsApp YMENBOUW">WhatsApp</a>
+<div class="mobile-cta"><a href="tel:+31621377407">Bel direct</a><a href="https://wa.me/31621377407?text=Hoi%20YMENBOUW%2C%20ik%20wil%20graag%20een%20offerte%20aanvragen." target="_blank" rel="noopener">WhatsApp</a></div>
+
 <footer><div class="container footer-inner"><span>© 2026 <b>YMENBOUW Stukadoorsbedrijf</b></span><span>Amsterdam · Noord-Holland</span></div></footer>
 
 <script>
@@ -297,6 +361,16 @@ document.getElementById('quoteForm').addEventListener('submit', function(e){
   const text = `Hoi YMENBOUW, ik wil graag een offerte/afspraak aanvragen.%0A%0ANaam: ${encodeURIComponent(name)}%0ATelefoon: ${encodeURIComponent(phone)}%0AType klus: ${encodeURIComponent(type)}%0AOmschrijving: ${encodeURIComponent(message || 'Nog geen omschrijving')}`;
   window.open(`https://wa.me/31621377407?text=${text}`, '_blank');
 });
+
+const lightbox=document.getElementById('lightbox');
+const lightboxImg=document.getElementById('lightboxImg');
+document.querySelectorAll('.photo-project img').forEach(img=>{
+  img.addEventListener('click',()=>{lightboxImg.src=img.src;lightboxImg.alt=img.alt;lightbox.classList.add('open');lightbox.setAttribute('aria-hidden','false');});
+});
+function closeLightbox(){lightbox.classList.remove('open');lightbox.setAttribute('aria-hidden','true');lightboxImg.src='';}
+document.querySelector('.lightbox-close').addEventListener('click',closeLightbox);
+lightbox.addEventListener('click',e=>{if(e.target===lightbox) closeLightbox();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape') closeLightbox();});
 </script>
 </body>
 </html>
